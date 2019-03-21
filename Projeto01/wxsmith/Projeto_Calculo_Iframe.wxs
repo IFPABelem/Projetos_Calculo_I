@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<wxsmith>
+	<object class="wxFrame" name="Projeto_Calculo_IFrame">
+		<size>430,256</size>
+		<id_arg>0</id_arg>
+		<object class="wxStaticBox" name="ID_STATICBOX1" variable="StaticBox1" member="yes">
+			<label>Insira os valores da matriz</label>
+			<pos>8,0</pos>
+			<size>168,145</size>
+		</object>
+		<object class="wxStaticBox" name="ID_STATICBOX2" variable="StaticBox2" member="yes">
+			<label>Inversa da Matriz</label>
+			<pos>248,0</pos>
+			<size>168,145</size>
+		</object>
+		<object class="wxSpinCtrl" name="ID_SPINCTRL1" variable="SpinCtrl1" member="yes">
+			<value>0</value>
+			<max>9</max>
+			<pos>16,16</pos>
+			<size>32,21</size>
+		</object>
+		<object class="wxSpinCtrl" name="ID_SPINCTRL2" variable="SpinCtrl2" member="yes">
+			<value>0</value>
+			<max>9</max>
+			<pos>56,16</pos>
+			<size>32,21</size>
+		</object>
+		<object class="wxSpinCtrl" name="ID_SPINCTRL3" variable="SpinCtrl3" member="yes">
+			<value>0</value>
+			<max>9</max>
+			<pos>96,16</pos>
+			<size>32,21</size>
+		</object>
+		<object class="wxSpinCtrl" name="ID_SPINCTRL4" variable="SpinCtrl4" member="yes">
+			<value>0</value>
+			<max>9</max>
+			<pos>16,48</pos>
+			<size>32,21</size>
+		</object>
+		<object class="wxSpinCtrl" name="ID_SPINCTRL5" variable="SpinCtrl5" member="yes">
+			<value>0</value>
+			<max>9</max>
+			<pos>56,48</pos>
+			<size>32,21</size>
+		</object>
+		<object class="wxSpinCtrl" name="ID_SPINCTRL6" variable="SpinCtrl6" member="yes">
+			<value>0</value>
+			<max>9</max>
+			<pos>96,48</pos>
+			<size>32,21</size>
+		</object>
+		<object class="wxSpinCtrl" name="ID_SPINCTRL7" variable="SpinCtrl7" member="yes">
+			<value>0</value>
+			<max>9</max>
+			<pos>16,80</pos>
+			<size>32,21</size>
+		</object>
+		<object class="wxSpinCtrl" name="ID_SPINCTRL8" variable="SpinCtrl8" member="yes">
+			<value>0</value>
+			<max>9</max>
+			<pos>56,80</pos>
+			<size>32,21</size>
+		</object>
+		<object class="wxSpinCtrl" name="ID_SPINCTRL9" variable="SpinCtrl9" member="yes">
+			<value>0</value>
+			<max>9</max>
+			<pos>96,80</pos>
+			<size>32,21</size>
+		</object>
+		<object class="wxChoice" name="ID_CHOICE1" variable="Choice1" member="yes">
+			<content>
+				<item>3x3</item>
+				<item>4x4</item>
+			</content>
+			<pos>184,24</pos>
+			<size>56,21</size>
+			<handler function="OnChoice1Select" entry="EVT_CHOICE" />
+		</object>
+		<object class="wxSpinCtrl" name="ID_SPINCTRL10" variable="SpinCtrl10" member="yes">
+			<value>0</value>
+			<max>9</max>
+			<pos>136,16</pos>
+			<size>32,21</size>
+		</object>
+		<object class="wxSpinCtrl" name="ID_SPINCTRL11" variable="SpinCtrl11" member="yes">
+			<value>0</value>
+			<max>9</max>
+			<pos>136,48</pos>
+			<size>32,21</size>
+		</object>
+		<object class="wxSpinCtrl" name="ID_SPINCTRL12" variable="SpinCtrl12" member="yes">
+			<value>0</value>
+			<max>9</max>
+			<pos>136,80</pos>
+			<size>32,21</size>
+		</object>
+		<object class="wxSpinCtrl" name="ID_SPINCTRL14" variable="SpinCtrl14" member="yes">
+			<value>0</value>
+			<max>9</max>
+			<pos>96,112</pos>
+			<size>32,21</size>
+		</object>
+		<object class="wxSpinCtrl" name="ID_SPINCTRL15" variable="SpinCtrl15" member="yes">
+			<value>0</value>
+			<max>9</max>
+			<pos>56,112</pos>
+			<size>32,21</size>
+		</object>
+		<object class="wxSpinCtrl" name="ID_SPINCTRL16" variable="SpinCtrl16" member="yes">
+			<value>0</value>
+			<max>9</max>
+			<pos>16,112</pos>
+			<size>32,21</size>
+		</object>
+		<object class="wxSpinCtrl" name="ID_SPINCTRL13" variable="SpinCtrl13" member="yes">
+			<value>0</value>
+			<max>9</max>
+			<pos>136,112</pos>
+			<size>32,21</size>
+		</object>
+		<object class="wxStaticText" name="ID_STATICTEXT1" variable="txtInversa" member="yes">
+			<label></label>
+			<pos>256,16</pos>
+			<size>152,120</size>
+			<font>
+				<size>19</size>
+				<style>normal</style>
+				<weight>bold</weight>
+				<underlined>0</underlined>
+				<family>swiss</family>
+				<face>Arial Narrow</face>
+			</font>
+		</object>
+		<object class="wxButton" name="ID_BUTTON1" variable="Button1" member="yes">
+			<label>CALCULAR</label>
+			<pos>168,152</pos>
+			<size>88,32</size>
+			<handler function="OnButton1Click" entry="EVT_BUTTON" />
+		</object>
+	</object>
+</wxsmith>
