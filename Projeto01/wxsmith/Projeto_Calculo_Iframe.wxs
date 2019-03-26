@@ -1,16 +1,22 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <wxsmith>
 	<object class="wxFrame" name="Projeto_Calculo_IFrame">
-		<size>430,256</size>
+		<size>510,375</size>
+		<bg>wxSYS_COLOUR_INACTIVECAPTION</bg>
 		<id_arg>0</id_arg>
+		<object class="wxStaticBox" name="ID_STATICBOX2" variable="StaticBox2" member="yes">
+			<label>Resultado da Matriz</label>
+			<pos>248,0</pos>
+			<size>168,145</size>
+		</object>
+		<object class="wxStaticBox" name="ID_STATICBOX3" variable="StaticBox3" member="yes">
+			<label>Segunda Matriz</label>
+			<pos>128,192</pos>
+			<size>168,145</size>
+		</object>
 		<object class="wxStaticBox" name="ID_STATICBOX1" variable="StaticBox1" member="yes">
 			<label>Insira os valores da matriz</label>
 			<pos>8,0</pos>
-			<size>168,145</size>
-		</object>
-		<object class="wxStaticBox" name="ID_STATICBOX2" variable="StaticBox2" member="yes">
-			<label>Inversa da Matriz</label>
-			<pos>248,0</pos>
 			<size>168,145</size>
 		</object>
 		<object class="wxSpinCtrl" name="ID_SPINCTRL1" variable="SpinCtrl1" member="yes">
@@ -31,37 +37,37 @@
 			<pos>96,16</pos>
 			<size>32,21</size>
 		</object>
-		<object class="wxSpinCtrl" name="ID_SPINCTRL4" variable="SpinCtrl4" member="yes">
+		<object class="wxSpinCtrl" name="ID_SPINCTRL5" variable="SpinCtrl5" member="yes">
 			<value>0</value>
 			<max>9</max>
 			<pos>16,48</pos>
 			<size>32,21</size>
 		</object>
-		<object class="wxSpinCtrl" name="ID_SPINCTRL5" variable="SpinCtrl5" member="yes">
+		<object class="wxSpinCtrl" name="ID_SPINCTRL6" variable="SpinCtrl6" member="yes">
 			<value>0</value>
 			<max>9</max>
 			<pos>56,48</pos>
 			<size>32,21</size>
 		</object>
-		<object class="wxSpinCtrl" name="ID_SPINCTRL6" variable="SpinCtrl6" member="yes">
+		<object class="wxSpinCtrl" name="ID_SPINCTRL7" variable="SpinCtrl7" member="yes">
 			<value>0</value>
 			<max>9</max>
 			<pos>96,48</pos>
 			<size>32,21</size>
 		</object>
-		<object class="wxSpinCtrl" name="ID_SPINCTRL7" variable="SpinCtrl7" member="yes">
+		<object class="wxSpinCtrl" name="ID_SPINCTRL9" variable="SpinCtrl9" member="yes">
 			<value>0</value>
 			<max>9</max>
 			<pos>16,80</pos>
 			<size>32,21</size>
 		</object>
-		<object class="wxSpinCtrl" name="ID_SPINCTRL8" variable="SpinCtrl8" member="yes">
+		<object class="wxSpinCtrl" name="ID_SPINCTRL10" variable="SpinCtrl10" member="yes">
 			<value>0</value>
 			<max>9</max>
 			<pos>56,80</pos>
 			<size>32,21</size>
 		</object>
-		<object class="wxSpinCtrl" name="ID_SPINCTRL9" variable="SpinCtrl9" member="yes">
+		<object class="wxSpinCtrl" name="ID_SPINCTRL11" variable="SpinCtrl11" member="yes">
 			<value>0</value>
 			<max>9</max>
 			<pos>96,80</pos>
@@ -76,13 +82,13 @@
 			<size>56,21</size>
 			<handler function="OnChoice1Select" entry="EVT_CHOICE" />
 		</object>
-		<object class="wxSpinCtrl" name="ID_SPINCTRL10" variable="SpinCtrl10" member="yes">
+		<object class="wxSpinCtrl" name="ID_SPINCTRL4" variable="SpinCtrl4" member="yes">
 			<value>0</value>
 			<max>9</max>
 			<pos>136,16</pos>
 			<size>32,21</size>
 		</object>
-		<object class="wxSpinCtrl" name="ID_SPINCTRL11" variable="SpinCtrl11" member="yes">
+		<object class="wxSpinCtrl" name="ID_SPINCTRL8" variable="SpinCtrl8" member="yes">
 			<value>0</value>
 			<max>9</max>
 			<pos>136,48</pos>
@@ -94,31 +100,31 @@
 			<pos>136,80</pos>
 			<size>32,21</size>
 		</object>
-		<object class="wxSpinCtrl" name="ID_SPINCTRL14" variable="SpinCtrl14" member="yes">
+		<object class="wxSpinCtrl" name="ID_SPINCTRL15" variable="SpinCtrl15" member="yes">
 			<value>0</value>
 			<max>9</max>
 			<pos>96,112</pos>
 			<size>32,21</size>
 		</object>
-		<object class="wxSpinCtrl" name="ID_SPINCTRL15" variable="SpinCtrl15" member="yes">
+		<object class="wxSpinCtrl" name="ID_SPINCTRL14" variable="SpinCtrl14" member="yes">
 			<value>0</value>
 			<max>9</max>
 			<pos>56,112</pos>
 			<size>32,21</size>
 		</object>
-		<object class="wxSpinCtrl" name="ID_SPINCTRL16" variable="SpinCtrl16" member="yes">
+		<object class="wxSpinCtrl" name="ID_SPINCTRL13" variable="SpinCtrl13" member="yes">
 			<value>0</value>
 			<max>9</max>
 			<pos>16,112</pos>
 			<size>32,21</size>
 		</object>
-		<object class="wxSpinCtrl" name="ID_SPINCTRL13" variable="SpinCtrl13" member="yes">
+		<object class="wxSpinCtrl" name="ID_SPINCTRL16" variable="SpinCtrl16" member="yes">
 			<value>0</value>
 			<max>9</max>
 			<pos>136,112</pos>
 			<size>32,21</size>
 		</object>
-		<object class="wxStaticText" name="ID_STATICTEXT1" variable="txtInversa" member="yes">
+		<object class="wxStaticText" name="ID_STATICTEXT1" variable="txtResultado" member="yes">
 			<label></label>
 			<pos>256,16</pos>
 			<size>152,120</size>
@@ -136,6 +142,153 @@
 			<pos>168,152</pos>
 			<size>88,32</size>
 			<handler function="OnButton1Click" entry="EVT_BUTTON" />
+		</object>
+		<object class="wxRadioBox" name="ID_RADIOBOX1" variable="RadioBox1" member="yes">
+			<label>Operação</label>
+			<content>
+				<item>Transposta</item>
+				<item>Soma</item>
+				<item>Multiplicação</item>
+				<item>Subtração</item>
+			</content>
+			<default>-1</default>
+			<pos>8,192</pos>
+		</object>
+		<object class="wxPanel" name="ID_PANEL1" variable="Panel1" member="yes">
+			<pos>320,200</pos>
+			<size>168,136</size>
+			<bg>wxSYS_COLOUR_WINDOW</bg>
+			<object class="wxStaticText" name="ID_STATICTEXT3" variable="txtIdentidade" member="yes">
+				<label>Matriz Identidade:</label>
+				<pos>8,32</pos>
+			</object>
+			<object class="wxStaticText" name="ID_STATICTEXT2" variable="txtDiagonal" member="yes">
+				<label>Matriz Diagonal:</label>
+				<pos>8,48</pos>
+			</object>
+			<object class="wxStaticText" name="ID_STATICTEXT7" variable="txtNula" member="yes">
+				<label>Matriz Nula:</label>
+				<pos>8,64</pos>
+			</object>
+			<object class="wxStaticText" name="ID_STATICTEXT8" variable="txtIgualdade" member="yes">
+				<label>Igualdade de Matrizes:</label>
+				<pos>8,96</pos>
+			</object>
+			<object class="wxStaticText" name="ID_STATICTEXT4" variable="txtSimetrica" member="yes">
+				<label>Matriz Simétrica:</label>
+				<pos>8,80</pos>
+			</object>
+			<object class="wxStaticText" name="ID_STATICTEXT5" variable="StaticText4" member="yes">
+				<label>Dados</label>
+				<pos>64,8</pos>
+				<font>
+					<size>12</size>
+					<style>normal</style>
+					<weight>normal</weight>
+					<underlined>0</underlined>
+					<family>swiss</family>
+				</font>
+			</object>
+			<object class="wxStaticText" name="ID_STATICTEXT6" variable="txtDeterminante" member="yes">
+				<label>Determinante:</label>
+				<pos>8,112</pos>
+			</object>
+		</object>
+		<object class="wxSpinCtrl" name="ID_SPINCTRL32" variable="SpinCtrl32" member="yes">
+			<value>0</value>
+			<max>9</max>
+			<pos>256,304</pos>
+			<size>32,21</size>
+		</object>
+		<object class="wxSpinCtrl" name="ID_SPINCTRL31" variable="SpinCtrl31" member="yes">
+			<value>0</value>
+			<max>9</max>
+			<pos>216,304</pos>
+			<size>32,21</size>
+		</object>
+		<object class="wxSpinCtrl" name="ID_SPINCTRL30" variable="SpinCtrl30" member="yes">
+			<value>0</value>
+			<max>9</max>
+			<pos>176,304</pos>
+			<size>32,21</size>
+		</object>
+		<object class="wxSpinCtrl" name="ID_SPINCTRL29" variable="SpinCtrl29" member="yes">
+			<value>0</value>
+			<max>9</max>
+			<pos>136,304</pos>
+			<size>32,21</size>
+		</object>
+		<object class="wxSpinCtrl" name="ID_SPINCTRL28" variable="SpinCtrl28" member="yes">
+			<value>0</value>
+			<max>9</max>
+			<pos>256,272</pos>
+			<size>32,21</size>
+		</object>
+		<object class="wxSpinCtrl" name="ID_SPINCTRL27" variable="SpinCtrl27" member="yes">
+			<value>0</value>
+			<max>9</max>
+			<pos>216,272</pos>
+			<size>32,21</size>
+		</object>
+		<object class="wxSpinCtrl" name="ID_SPINCTRL26" variable="SpinCtrl26" member="yes">
+			<value>0</value>
+			<max>9</max>
+			<pos>176,272</pos>
+			<size>32,21</size>
+		</object>
+		<object class="wxSpinCtrl" name="ID_SPINCTRL25" variable="SpinCtrl25" member="yes">
+			<value>0</value>
+			<max>9</max>
+			<pos>136,272</pos>
+			<size>32,21</size>
+		</object>
+		<object class="wxSpinCtrl" name="ID_SPINCTRL24" variable="SpinCtrl24" member="yes">
+			<value>0</value>
+			<max>9</max>
+			<pos>256,240</pos>
+			<size>32,21</size>
+		</object>
+		<object class="wxSpinCtrl" name="ID_SPINCTRL23" variable="SpinCtrl23" member="yes">
+			<value>0</value>
+			<max>9</max>
+			<pos>216,240</pos>
+			<size>32,21</size>
+		</object>
+		<object class="wxSpinCtrl" name="ID_SPINCTRL22" variable="SpinCtrl22" member="yes">
+			<value>0</value>
+			<max>9</max>
+			<pos>176,240</pos>
+			<size>32,21</size>
+		</object>
+		<object class="wxSpinCtrl" name="ID_SPINCTRL21" variable="SpinCtrl21" member="yes">
+			<value>0</value>
+			<max>9</max>
+			<pos>136,240</pos>
+			<size>32,21</size>
+		</object>
+		<object class="wxSpinCtrl" name="ID_SPINCTRL20" variable="SpinCtrl20" member="yes">
+			<value>0</value>
+			<max>9</max>
+			<pos>256,208</pos>
+			<size>32,21</size>
+		</object>
+		<object class="wxSpinCtrl" name="ID_SPINCTRL19" variable="SpinCtrl19" member="yes">
+			<value>0</value>
+			<max>9</max>
+			<pos>216,208</pos>
+			<size>32,21</size>
+		</object>
+		<object class="wxSpinCtrl" name="ID_SPINCTRL18" variable="SpinCtrl18" member="yes">
+			<value>0</value>
+			<max>9</max>
+			<pos>176,208</pos>
+			<size>32,21</size>
+		</object>
+		<object class="wxSpinCtrl" name="ID_SPINCTRL17" variable="SpinCtrl17" member="yes">
+			<value>0</value>
+			<max>9</max>
+			<pos>136,208</pos>
+			<size>32,21</size>
 		</object>
 	</object>
 </wxsmith>

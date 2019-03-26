@@ -1495,10 +1495,12 @@
 1544370008 c:\src\wxwidgets-3.1.2\include\wx\univ\theme.h
 	"wx/string.h"
 
-1552853165 c:\users\elizabeth\documents\projetos c++\projeto_calculo_i\projeto_calculo_imain.h
+1553611471 c:\users\elizabeth\documents\projetos c++\projeto_calculo_i\projeto_calculo_imain.h
 	<wx/button.h>
 	<wx/choice.h>
 	<wx/frame.h>
+	<wx/panel.h>
+	<wx/radiobox.h>
 	<wx/spinctrl.h>
 	<wx/statbox.h>
 	<wx/stattext.h>
@@ -1913,10 +1915,13 @@
 
 1544370008 c:\src\wxwidgets-3.1.2\include\wx\msw\rcdefs.h
 
-1553090750 source:c:\users\elizabeth\documents\projetos c++\projeto_calculo_i\projeto_calculo_imain.cpp
+1553612900 source:c:\users\elizabeth\documents\projetos c++\projeto_calculo_i\projeto_calculo_imain.cpp
 	"Projeto_Calculo_IMain.h"
 	<wx/msgdlg.h>
+	"Funcoes.h"
+	<wx/font.h>
 	<wx/intl.h>
+	<wx/settings.h>
 	<wx/string.h>
 
 1544370008 c:\src\wxwidgets-3.1.2\include\wx\msgdlg.h
@@ -2017,4 +2022,41 @@
 1544370008 c:\src\wxwidgets-3.1.2\include\wx\osx\stattext.h
 
 1544370008 c:\src\wxwidgets-3.1.2\include\wx\qt\stattext.h
+
+1544370008 c:\src\wxwidgets-3.1.2\include\wx\radiobox.h
+	"wx/defs.h"
+	"wx/ctrlsub.h"
+	"wx/dynarray.h"
+	"wx/univ/radiobox.h"
+	"wx/msw/radiobox.h"
+	"wx/motif/radiobox.h"
+	"wx/gtk/radiobox.h"
+	"wx/gtk1/radiobox.h"
+	"wx/osx/radiobox.h"
+	"wx/qt/radiobox.h"
+
+1544370008 c:\src\wxwidgets-3.1.2\include\wx\univ\radiobox.h
+	"wx/statbox.h"
+	"wx/dynarray.h"
+
+1544370008 c:\src\wxwidgets-3.1.2\include\wx\msw\radiobox.h
+	"wx/statbox.h"
+
+1544370008 c:\src\wxwidgets-3.1.2\include\wx\motif\radiobox.h
+	"wx/dynarray.h"
+	"wx/arrstr.h"
+
+1544370008 c:\src\wxwidgets-3.1.2\include\wx\gtk\radiobox.h
+	"wx/bitmap.h"
+	"wx/list.h"
+
+1544370008 c:\src\wxwidgets-3.1.2\include\wx\gtk1\radiobox.h
+	"wx/bitmap.h"
+
+1544370008 c:\src\wxwidgets-3.1.2\include\wx\osx\radiobox.h
+	"wx/containr.h"
+
+1544370008 c:\src\wxwidgets-3.1.2\include\wx\qt\radiobox.h
+
+1553614707 c:\users\elizabeth\documents\projetos c++\projeto_calculo_i\funcoes.h
 
