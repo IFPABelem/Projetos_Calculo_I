@@ -1,12 +1,4 @@
-int soma(int mat[][4]){
-    int matSoma[4][4];
-    for (int i=0; i<4; i++){
-        for (int j=0; j<4; j++){
-            matSoma[i][j]=mat[i][j];
-        }
-    }
-    return matSoma[1][1];
-}
+
 wxString exibirMatriz(int mat[][4], int T){
     wxString m="";
 
@@ -68,8 +60,8 @@ wxString identidade(int mat[][4], int T){
     wxString teste="Sim";
     for (int i=0; i<T; i++){
         for (int j=0; j<T; j++){
-            if(i!=j && mat[i][j]!=0) teste="Não";
-            if(i==j && mat[i][j]!=1) teste="Não";
+            if(i!=j && mat[i][j]!=0) teste="Nï¿½o";
+            if(i==j && mat[i][j]!=1) teste="Nï¿½o";
         }
     }
     return teste;
@@ -79,7 +71,7 @@ wxString diagonal(int mat[][4], int T){
     wxString teste="Sim";
     for (int i=0; i<T; i++){
         for (int j=0; j<T; j++){
-            if(i!=j && mat[i][j]!=0) teste="Não";
+            if(i!=j && mat[i][j]!=0) teste="Nï¿½o";
         }
     }
     return teste;
@@ -90,7 +82,7 @@ wxString nula(int mat[][4], int T){
     for (int i=0; i<T; i++){
         for (int j=0; j<T; j++){
             if(mat[i][j]!=0){
-                    teste="Não";
+                    teste="Nï¿½o";
             }
         }
     }
@@ -101,7 +93,7 @@ wxString simetrica(int mat[][4], int T){
     wxString teste="Sim";
 
             if(exibirMatriz(mat,T) != transposta(mat, T)){
-                    teste="Não";
+                    teste="Nï¿½o";
             }
 
     return teste;
@@ -112,7 +104,7 @@ wxString igualdade(int mat[][4], int mat2[][4], int T){
     for (int i=0; i<T; i++){
         for (int j=0; j<T; j++){
             if(mat[i][j]!=mat2[i][j]){
-                    teste="Não";
+                    teste="Nï¿½o";
             }
         }
     }
