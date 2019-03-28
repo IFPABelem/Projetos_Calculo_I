@@ -47,13 +47,13 @@ wxString multiplicacao(int A[][4], int B[][4], int T){
 }
 
 wxString subtracao(int mat[][4], int mat2[][4], int T){
-    int matSoma[T][4];
+    int MATre[T][4];
     for (int i=0; i<T; i++){
         for (int j=0; j<T; j++){
-            matSoma[i][j]=mat[i][j]-mat2[i][j];
+            MATre[i][j]=mat[i][j]-mat2[i][j];
         }
     }
-    return exibirMatriz(matSoma, T);
+    return exibirMatriz(MATre, T);
 }
 
 wxString identidade(int mat[][4], int T){
