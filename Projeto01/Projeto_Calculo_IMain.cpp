@@ -1,9 +1,9 @@
 /***************************************************************
  * Name:      Projeto_Calculo_IMain.cpp
  * Purpose:   Code for Application Frame
- * Author:    Ewerton, Giovani, Leandro, Maurício, Thiago, Tiago ()
+ * Author:    Ewerton, Giovani, Jennifer, Leandro, Maurício, Thiago, Tiago ()
  * Created:   2019-03-16
- * Copyright: Ewerton, Giovani, Leandro, Maurício, Thiago, Tiago ()
+ * Copyright: Ewerton, Giovani, Jennifer, Leandro, Maurício, Thiago, Tiago ()
  * License:
  **************************************************************/
 
@@ -102,7 +102,7 @@ Projeto_Calculo_IFrame::Projeto_Calculo_IFrame(wxWindow* parent,wxWindowID id)
 {
 
     //(*Initialize(Projeto_Calculo_IFrame)
-    Create(parent, wxID_ANY, wxEmptyString, wxDefaultPosition, wxDefaultSize, wxDEFAULT_FRAME_STYLE, _T("wxID_ANY"));
+    Create(parent, wxID_ANY, _("Calculadora de Matrizes"), wxDefaultPosition, wxDefaultSize, wxDEFAULT_FRAME_STYLE, _T("wxID_ANY"));
     SetClientSize(wxSize(510,375));
     SetBackgroundColour(wxSystemSettings::GetColour(wxSYS_COLOUR_INACTIVECAPTION));
     StaticBox2 = new wxStaticBox(this, ID_STATICBOX2, _("Resultado da Matriz"), wxPoint(248,0), wxSize(168,145), 0, _T("ID_STATICBOX2"));

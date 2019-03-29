@@ -56,15 +56,21 @@ wxString subtracao(int mat[][4], int mat2[][4], int T){
     return exibirMatriz(MATre, T);
 }
 
-wxString identidade(int mat[][4], int T){
-    wxString teste="Sim";
+wxString identidade(int m[][4], int T){
+    int contdp=0, contz=0;
+
     for (int i=0; i<T; i++){
         for (int j=0; j<T; j++){
-            if(i!=j && mat[i][j]!=0) teste=wxT("Não");
-            if(i==j && mat[i][j]!=1) teste=wxT("Não");
+            if((i==j) && (m[i][j]==1)) contdp++;
+            if(m[i][j]==0) contz++;
+
         }
     }
-    return teste;
+    if((contdp==T) && (contz==T*T-T)){
+        return "Sim";
+    }else{
+        return wxT("Não");
+    }
 }
 
 wxString diagonal(int mat[][4], int T){
