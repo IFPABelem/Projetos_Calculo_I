@@ -74,7 +74,6 @@ const long Projeto_Calculo_IFrame::ID_STATICTEXT7 = wxNewId();
 const long Projeto_Calculo_IFrame::ID_STATICTEXT8 = wxNewId();
 const long Projeto_Calculo_IFrame::ID_STATICTEXT4 = wxNewId();
 const long Projeto_Calculo_IFrame::ID_STATICTEXT5 = wxNewId();
-const long Projeto_Calculo_IFrame::ID_STATICTEXT6 = wxNewId();
 const long Projeto_Calculo_IFrame::ID_PANEL1 = wxNewId();
 const long Projeto_Calculo_IFrame::ID_SPINCTRL32 = wxNewId();
 const long Projeto_Calculo_IFrame::ID_SPINCTRL31 = wxNewId();
@@ -156,17 +155,16 @@ Projeto_Calculo_IFrame::Projeto_Calculo_IFrame(wxWindow* parent,wxWindowID id)
     	_(wxT("Subtração"))
     };
     RadioBox1 = new wxRadioBox(this, ID_RADIOBOX1, _(wxT("Operação")), wxPoint(8,192), wxDefaultSize, 4, __wxRadioBoxChoices_1, 1, 0, wxDefaultValidator, _T("ID_RADIOBOX1"));
-    Panel1 = new wxPanel(this, ID_PANEL1, wxPoint(320,200), wxSize(168,136), wxTAB_TRAVERSAL, _T("ID_PANEL1"));
+    Panel1 = new wxPanel(this, ID_PANEL1, wxPoint(320,200), wxSize(168,128), wxTAB_TRAVERSAL, _T("ID_PANEL1"));
     Panel1->SetBackgroundColour(wxSystemSettings::GetColour(wxSYS_COLOUR_WINDOW));
     txtIdentidade = new wxStaticText(Panel1, ID_STATICTEXT3, _("Matriz Identidade:"), wxPoint(8,32), wxDefaultSize, 0, _T("ID_STATICTEXT3"));
     txtDiagonal = new wxStaticText(Panel1, ID_STATICTEXT2, _("Matriz Diagonal:"), wxPoint(8,48), wxDefaultSize, 0, _T("ID_STATICTEXT2"));
     txtNula = new wxStaticText(Panel1, ID_STATICTEXT7, _("Matriz Nula:"), wxPoint(8,64), wxDefaultSize, 0, _T("ID_STATICTEXT7"));
     txtIgualdade = new wxStaticText(Panel1, ID_STATICTEXT8, _("Igualdade de Matrizes:"), wxPoint(8,96), wxDefaultSize, 0, _T("ID_STATICTEXT8"));
-    txtSimetrica = new wxStaticText(Panel1, ID_STATICTEXT4, _("Matriz Simétrica:"), wxPoint(8,80), wxDefaultSize, 0, _T("ID_STATICTEXT4"));
+    txtSimetrica = new wxStaticText(Panel1, ID_STATICTEXT4, _(wxT("Matriz Simétrica:")), wxPoint(8,80), wxDefaultSize, 0, _T("ID_STATICTEXT4"));
     StaticText4 = new wxStaticText(Panel1, ID_STATICTEXT5, _("Dados"), wxPoint(64,8), wxDefaultSize, 0, _T("ID_STATICTEXT5"));
     wxFont StaticText4Font(12,wxFONTFAMILY_SWISS,wxFONTSTYLE_NORMAL,wxFONTWEIGHT_NORMAL,false,wxEmptyString,wxFONTENCODING_DEFAULT);
     StaticText4->SetFont(StaticText4Font);
-    txtDeterminante = new wxStaticText(Panel1, ID_STATICTEXT6, _("Determinante:"), wxPoint(8,112), wxDefaultSize, 0, _T("ID_STATICTEXT6"));
     SpinCtrl32 = new wxSpinCtrl(this, ID_SPINCTRL32, _T("0"), wxPoint(256,304), wxSize(32,21), 0, 0, 9, 0, _T("ID_SPINCTRL32"));
     SpinCtrl32->SetValue(_T("0"));
     SpinCtrl31 = new wxSpinCtrl(this, ID_SPINCTRL31, _T("0"), wxPoint(216,304), wxSize(32,21), 0, 0, 9, 0, _T("ID_SPINCTRL31"));
@@ -274,7 +272,7 @@ void Projeto_Calculo_IFrame::OnButton1Click(wxCommandEvent& event)
 
 
     int mat[4][4], mat2[4][4];
-    //int esc = Choice1->GetCurrentSelection();
+
     int T=(Choice1->GetCurrentSelection()==1)?4:3;
     wxString m;
     if(T == 4){
@@ -343,10 +341,9 @@ void Projeto_Calculo_IFrame::OnButton1Click(wxCommandEvent& event)
     txtIdentidade->SetLabel("Matriz Identidade: "+identidade(mat, T));
     txtDiagonal->SetLabel("Matriz Diagonal: "+diagonal(mat, T));
     txtNula->SetLabel("Matriz Nula: "+nula(mat, T));
-    txtSimetrica->SetLabel("Matriz Simetrica: "+simetrica(mat, T));
+    txtSimetrica->SetLabel(wxT("Matriz Simétrica: ")+simetrica(mat, T));
     txtIgualdade->SetLabel("Igualdade de Matrizes: "+igualdade(mat, mat2, T));
-    //txtDeterminante->SetLabel("Determinante: "+wxString::Format(wxT("%d"),teste()));
-    //txtDiagonal->SetLabel("Teste: "+wxString::Format(wxT("%d"), soma(mat)));
+
     switch(RadioBox1->GetSelection()){
         case 0:
             m=transposta(mat,T);
@@ -364,6 +361,5 @@ void Projeto_Calculo_IFrame::OnButton1Click(wxCommandEvent& event)
 
     }
 txtResultado->SetLabel(m);
-    //wxMessageBox(m);
 }
 

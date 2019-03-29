@@ -1495,7 +1495,7 @@
 1544370008 c:\src\wxwidgets-3.1.2\include\wx\univ\theme.h
 	"wx/string.h"
 
-1553611471 c:\users\elizabeth\documents\projetos c++\projeto_calculo_i\projeto_calculo_imain.h
+1553799031 c:\users\elizabeth\documents\projetos c++\projeto_calculo_i\projeto_calculo_imain.h
 	<wx/button.h>
 	<wx/choice.h>
 	<wx/frame.h>
@@ -1915,7 +1915,7 @@
 
 1544370008 c:\src\wxwidgets-3.1.2\include\wx\msw\rcdefs.h
 
-1553612900 source:c:\users\elizabeth\documents\projetos c++\projeto_calculo_i\projeto_calculo_imain.cpp
+1553799195 source:c:\users\elizabeth\documents\projetos c++\projeto_calculo_i\projeto_calculo_imain.cpp
 	"Projeto_Calculo_IMain.h"
 	<wx/msgdlg.h>
 	"Funcoes.h"
@@ -2058,5 +2058,7 @@
 
 1544370008 c:\src\wxwidgets-3.1.2\include\wx\qt\radiobox.h
 
-1553614707 c:\users\elizabeth\documents\projetos c++\projeto_calculo_i\funcoes.h
+1553799296 c:\users\elizabeth\documents\projetos c++\projeto_calculo_i\funcoes.h
+
+1553798896 c:\users\elizabeth\documents\projetos c++\projeto_calculo_i\determinante.h
 

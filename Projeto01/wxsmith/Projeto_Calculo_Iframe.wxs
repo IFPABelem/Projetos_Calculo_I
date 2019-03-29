@@ -156,7 +156,7 @@
 		</object>
 		<object class="wxPanel" name="ID_PANEL1" variable="Panel1" member="yes">
 			<pos>320,200</pos>
-			<size>168,136</size>
+			<size>168,128</size>
 			<bg>wxSYS_COLOUR_WINDOW</bg>
 			<object class="wxStaticText" name="ID_STATICTEXT3" variable="txtIdentidade" member="yes">
 				<label>Matriz Identidade:</label>
@@ -188,10 +188,6 @@
 					<underlined>0</underlined>
 					<family>swiss</family>
 				</font>
-			</object>
-			<object class="wxStaticText" name="ID_STATICTEXT6" variable="txtDeterminante" member="yes">
-				<label>Determinante:</label>
-				<pos>8,112</pos>
 			</object>
 		</object>
 		<object class="wxSpinCtrl" name="ID_SPINCTRL32" variable="SpinCtrl32" member="yes">

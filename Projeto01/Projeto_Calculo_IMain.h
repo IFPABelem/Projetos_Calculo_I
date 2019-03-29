@@ -70,7 +70,6 @@ class Projeto_Calculo_IFrame: public wxFrame
         static const long ID_STATICTEXT8;
         static const long ID_STATICTEXT4;
         static const long ID_STATICTEXT5;
-        static const long ID_STATICTEXT6;
         static const long ID_PANEL1;
         static const long ID_SPINCTRL32;
         static const long ID_SPINCTRL31;
@@ -131,7 +130,6 @@ class Projeto_Calculo_IFrame: public wxFrame
         wxStaticBox* StaticBox2;
         wxStaticBox* StaticBox3;
         wxStaticText* StaticText4;
-        wxStaticText* txtDeterminante;
         wxStaticText* txtDiagonal;
         wxStaticText* txtIdentidade;
         wxStaticText* txtIgualdade;
